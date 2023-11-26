@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.header {
+    background-color: #1E90FF;
+    display: flex;
+    height: 79px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 31px;
+    font-weight: bold;
+    color: white;
+}
+
+.search {
+    border: 2px solid #767676;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 13px 0px 13px 11px;
+    width: 310px;
+    height: 24px;
+    background-color: #FFFFFF;
+    color: #767676;
+}
+
+.searchtext {
+    padding-left: 12px;
+    opacity: 0.6;
+}
+
+.list {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    color: white;
+}
+
+.p1, .p2, .p3, .p4 {
+    margin: 10px;
+}
+
+.p5 {
+    display: none;
+}
+
+
+
+.main {
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.content {
+    padding-top: 25px;
+    height: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+    display: flex;
+}   
+
+
+
+.avengers {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 5px 5px grey;
+    width: 712px;
+    height: 100%;
+    float: left;
+}
+
+.avgimg {
+    margin: 1px;
+    background-color: white;
+}
+
+.text {
+    padding: 15px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+
+
+
+
+.img {
+    max-width: 100%;
+    margin: 16px;
+    color: white;
+}
+
+
+.movies {
+    box-shadow: 1px 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.movies:last-child {
+    justify-content: flex-end;
+}
+
+
+.col {
+    display: flex;
+    width: 100%;
+}
+
+
+.button {
+    justify-content: flex-end;
+    align-self: flex-end;
+    background-color: #1B98FF;
+    color: white;
+    padding: 10px;
+    margin: 26px;
+    border-radius: 5px 5px 5px 5px;
+    width: 93px;
+    border: none;
+}
+
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .col {
+        flex-direction: column ;
+    }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .movies {
+        width: auto;
+        margin: 0;
+    }
+
+    .col {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .movies1, .movies2{
+        max-width: 356px;
+    }
+
+    .avengers {
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 700px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .list {
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .p1, .p2, .p3, .p4 {
+        display: none;
+    }  
+
+    .p5 {
+        display: flex;
+        padding: 15px;
+    }
+
+    .header {
+        justify-content:space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .search {
+        display: none;
+    }
+
+    .content {
+        display: inline;
+        flex-direction: row;
+        max-width: 356px;
+    }
+
+    .movies {
+        width: auto;
+        margin: 0;
+    }
+
+    .col {
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .movies1, .movies2{
+        max-width: 356px;
+        margin: auto;
+    }
+
+    .avengers {
+        margin: auto;
+        width: 356px;
+        float: none;
+    }
+
+    .avgimg {
+        margin: 0;
+    }
+     
+    .p1, .p2, .p3, .p4 {
+        display: none;
+    }
+
+    .p5 {
+        display: flex;
+        padding: 15px;
+    }
+
+    .header {
+        justify-content:space-between;
+    }
+    
+
+}/*# sourceMappingURL=task3.css.map */

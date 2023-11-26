@@ -1,0 +1,132 @@
+body {
+    background-color: #8CCFF7;
+    border: 0;
+  }
+  
+  @media screen and (min-width: 801px) {
+    .pic {
+      background-image: url(Images/400x400.png);
+      height: 400px;
+      width: 400px;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 800px) {
+    .pic {
+      background-image: url(Images/300x300.png);
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .pic {
+      background-image: url(Images/200x200.png);
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .text {
+    color: #969696;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: right;
+    margin: auto;
+  }
+  
+  .rainbow {
+    background-color: #E2EFF1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+  }
+  
+  .main {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    height: 100%;
+  }
+  
+  .color1, .color4, .color3, .color2 {
+    background-color: #4E89AE;
+    height: 40px;
+    display: flex;
+  }
+  
+  .color2 {
+    background-color: #43658B;
+  }
+  
+  .color3 {
+    background-color: #ED6663;
+  }
+  
+  .color4 {
+    background-color: #FFA372;
+  }
+  
+  .color1:hover, .color2:hover, .color3:hover, .color4:hover {
+    background-color: #434343;
+  }
+  
+  .ball1, .ball4, .ball3, .ball2 {
+    background-color: #FFA372;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 5px;
+  }
+  
+  .ball2 {
+    background-color: #ED6663;
+    height: 90px;
+    width: 90px;
+    border-radius: 90px;
+  }
+  
+  .ball3 {
+    background-color: #43658B;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+  }
+  
+  .ball4 {
+    background-color: #4E89AE;
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+  }
+  
+  .ball1:hover, .ball2:hover, .ball3:hover, .ball4:hover {
+    background-color: #434343;
+  }
+  
+  .main-balls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 620px) and (max-width: 1040px) {
+    .main-balls {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 940px) {
+    .main-balls {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    .main-balls {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
